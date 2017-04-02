@@ -1,13 +1,14 @@
 <template>
 <div class="">
-
+    <hy-head name="work"></hy-head>
+    <hello></hello>
 </div>
 </template>
 
 <script>
 export default {
   components: {
-    "header": require('../components/header.vue'),
+    "hy-head": require('../components/header.vue'),
     "hello": require('../components/hello-content.vue')
   }
 }

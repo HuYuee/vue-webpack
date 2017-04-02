@@ -1,13 +1,15 @@
 <template>
 <div class="">
+    <hy-head name="hello"></hy-head>
+    <hello-content></hello-content>
 </div>
 </template>
 
 <script>
 export default {
   components: {
-    "blog-content": require('../components/blog-content.vue'),
-    "hello": require('../components/hello-content.vue')
+    "hy-head": require('../components/header.vue'),
+    "hello-content": require('../components/hello-content.vue')
   }
 }
 </script>
