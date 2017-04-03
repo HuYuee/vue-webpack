@@ -1,7 +1,7 @@
 <template>
 <div class="">
-    <hy-head name="work"></hy-head>
-    <work></work>
+    <hy-head name="life"></hy-head>
+    <life-content></life-content>
 </div>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
   components: {
     "hy-head": require('../components/header.vue'),
-    "work": require('../components/work-content.vue')
+    "life-content": require('../components/life-content.vue')
   }
 }
 </script>

@@ -1,3 +1,4 @@
+
 <template>
   <div class="hello">
     <h1>{{msg}}</h1>
@@ -9,7 +10,7 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: '我是blog的content！'
+      msg: '我是work的content！'
     }
   }
 }

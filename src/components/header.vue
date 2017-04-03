@@ -17,6 +17,7 @@
     <ul class="nav navbar-nav navbar-right">
       <li :class="{active:isHome}"><router-link to="/">简历</router-link></li>
       <li :class="{active:isWork}"><router-link to="/works">作品</router-link></li>
+      <li :class="{active:isLife}"><router-link to="/life">生活</router-link></li>
     </ul>
   </div>
 </div>
@@ -38,6 +39,9 @@ export default {
     },
     isWork: function(){
         return this.name == "work"
+    },
+    isLife: function(){
+        return this.name == "life"
     }
   }
 }
