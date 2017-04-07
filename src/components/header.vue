@@ -47,6 +47,12 @@ export default {
       age1: ""
     }
   },
+  watch: {
+    '$route' (to, from) {
+      // 对路由变化作出响应...
+      console.log(to.name);
+    }
+},
   computed: {
     isHome: function() {
       return this.name == "hello"
@@ -62,6 +68,9 @@ export default {
 </script>
 
 <style scoped>
+.head{
+    overflow: hidden;
+}
 .navbar {
   background-color: #28292e;
   border: 0 none;
@@ -70,7 +79,7 @@ export default {
   width: 100%;
   padding: 15px 0;
   margin-bottom: 0;
-  z-index: 10;
+  z-index: 9999;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   -ms-transition: all .35s;
