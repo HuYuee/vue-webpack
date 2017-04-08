@@ -25,5 +25,7 @@ export default {
 }
 .xxx{
     margin-top: 80px;
+    height: 100%;
+
 }
 </style>

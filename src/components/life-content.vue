@@ -25,7 +25,6 @@
         <img v-if="item.type=='image'" class="img-responsive" v-bind:src="'/static/img/'+item.src">
         <div v-else-if="item.type=='video'" class="video-container">
           <iframe allowfullscreen="" frameborder="0" mozallowfullscreen="" v-bind:src="'/static/video/'+item.src" webkitallowfullscreen=""></iframe>
-          <!-- <iframe allowfullscreen="" frameborder="0" mozallowfullscreen="" src="https://player.vimeo.com/video/16202331?title=0&amp;byline=0&amp;portrait=0" webkitallowfullscreen=""></iframe> -->
         </div>
         <p>{{item.content}}</p>
       </div>
