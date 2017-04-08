@@ -42,7 +42,7 @@
  * [引入js文件]
  */
 var $ = require('../../static/js/jquery')
-var timeline = require('../assets/json/timeline.json')
+var timeline = require('../../data/timeline.json')
 
 $(document).ready(function() {
   var timelineAnimate;
