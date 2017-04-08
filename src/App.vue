@@ -1,12 +1,16 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+     <hy-head></hy-head>
+    <router-view class="xxx"></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    "hy-head": require('./components/header.vue')
+  }
 }
 </script>
 
@@ -17,6 +21,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 100px;
+  /*margin-top: 100px;*/
+}
+.xxx{
+    margin-top: 80px;
 }
 </style>

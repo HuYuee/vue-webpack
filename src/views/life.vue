@@ -1,6 +1,6 @@
 <template>
 <div class="">
-    <hy-head name="life"></hy-head>
+    <!-- <hy-head name="life"></hy-head> -->
     <life-content></life-content>
 </div>
 </template>
