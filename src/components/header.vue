@@ -19,7 +19,7 @@
             <router-link to="/">简历</router-link>
           </li>
           <li :class="{active:isWork}">
-            <router-link to="/works">作品</router-link>
+            <router-link to="/work">作品</router-link>
           </li>
           <li :class="{active:isLife}">
             <router-link to="/life">生活</router-link>
@@ -40,6 +40,7 @@ $(window).on('ready , scroll', function() {
     $('#navbar').removeClass('minified');
   }
 });
+
 export default {
   props: ['name'],
   data() {
@@ -50,18 +51,19 @@ export default {
   watch: {
     '$route' (to, from) {
       // 对路由变化作出响应...
-      console.log(to.name);
+    //   alert(to.name);
+
     }
 },
   computed: {
     isHome: function() {
-      return this.name == "hello"
+      return this.$route.name == "hello"
     },
     isWork: function() {
-      return this.name == "work"
+      return this.$route.name == "work"
     },
     isLife: function() {
-      return this.name == "life"
+      return this.$route.name == "life"
     }
   }
 }

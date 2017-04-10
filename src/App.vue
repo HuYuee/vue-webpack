@@ -1,7 +1,10 @@
 <template>
   <div id="app">
      <hy-head></hy-head>
-    <router-view class="xxx"></router-view>
+     <transition name="fade">
+         <router-view class="xxx"></router-view>
+     </transition>
+
   </div>
 </template>
 
@@ -27,5 +30,14 @@ export default {
     margin-top: 80px;
     height: 100%;
 
+}
+.fade-enter-active{
+    transition: opacity .8s
+}
+ .fade-leave-active {
+  /*transition: opacity 2s*/
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
 }
 </style>

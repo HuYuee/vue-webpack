@@ -9,11 +9,15 @@ Vue.use(Router)
 export default new Router({
   routes: [{
       path: '/',
-      name: 'Hello',
+      name: 'hello',
       component: Hello
     }, {
-      path: '/works',
-      name: 'works',
+      path: '/work',
+      name: 'work',
+      component: works
+    }, {
+      path: '/work/:id',
+      name: 'work',
       component: works
     }, {
       path: '/life',

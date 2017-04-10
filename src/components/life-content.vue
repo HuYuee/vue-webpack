@@ -64,7 +64,7 @@ $(document).ready(function() {
 export default {
   props: ['name'],
   data() {
-    console.log(timeline.data);
+    // console.log(timeline.data);
     return {
       data: timeline.data
     }
@@ -81,6 +81,7 @@ export default {
     }
   }
 }
+// console.log(this);
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
